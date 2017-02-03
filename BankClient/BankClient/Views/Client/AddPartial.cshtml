@@ -1,0 +1,15 @@
+﻿
+@model BankClient.Models.Client
+
+<div id="addTable" class="table-responsive">
+    <table class="table table-bordered">
+        <tr>
+            <td>@Html.LabelFor(x => x.Name)</td>
+            <td>@Html.EditorFor(x => x.Name)</td>
+            <td>@Html.LabelFor(x => x.Surname)</td>
+            <td>@Html.EditorFor(x => x.Surname)</td>
+            <td><input type="button" class="btn btn-success okAddCat" value="Confirm" /></td>
+            <td><input type="button" class="btn btn-danger cancelAddCat" value="Cancel" /></td>
+        </tr>
+    </table>
+</div>

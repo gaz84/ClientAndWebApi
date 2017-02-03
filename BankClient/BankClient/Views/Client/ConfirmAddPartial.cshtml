@@ -1,0 +1,8 @@
+﻿@model BankClient.Models.Client
+<tr id="@("client"+@Model.id )">
+    <td>@Model.id</td>
+    <td>@Model.Name</td>
+    <td>@Model.Surname</td>
+    <td><input type="button" class="btn btn-primary editClient" data-id=@Model.id value="Edit" /></td>
+    <td><input type="button" class="btn btn-danger deleteClient" data-id=@Model.id value="Delete" /></td>
+</tr>

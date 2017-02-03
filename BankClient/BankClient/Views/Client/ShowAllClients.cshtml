@@ -1,0 +1,26 @@
+﻿@model IEnumerable<BankClient.Models.Client>
+
+<h2>Clients</h2>
+<div class="table-responsive">
+    <table id="myTable" class="table table-bordered">
+        <tr>
+            <td>Id</td>
+            <td>Name</td>
+            <td>Surname</td>
+            <td></td>
+            <td></td>
+        </tr>
+        @foreach (var client in Model)
+        {
+            <tr id="@("client"+@client.id )">
+                @Html.Partial("ShowPartial", client)
+            </tr>
+        }
+    </table>
+    <input type="button" id="addClientButton" class="btn btn-success" value="Add New Client" />
+</div>
+<div id="addRow"></div>
+
+
+
+

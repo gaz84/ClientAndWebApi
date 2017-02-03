@@ -1,0 +1,12 @@
+﻿@model BankClient.Models.Credit
+<tr id="@("credit"+@Model.id )">
+    <td>@Model.id</td>
+    <td>@Model.Ammount</td>
+    <td>@Model.Percent</td>
+    <td>@Model.Description</td>
+    <td>@Model.DayOfCredit</td>
+    <td>@Model.ClientId</td>
+    <td><input type="button" class="btn btn-primary editCredit" data-id=@Model.id value="Edit" /></td>
+    <td><input type="button" class="btn btn-danger deleteCredit" data-id=@Model.id value="Delete" /></td>
+
+</tr>

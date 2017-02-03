@@ -1,0 +1,11 @@
+﻿@model BankClient.Models.Credit
+
+<td>@Model.id</td>
+<td><input id="@("ammount"+@Model.id)" type="number" value="@Model.Ammount" /></td>
+<td><input id="@("percent"+@Model.id)" type="number" value="@Model.Percent" /></td>
+<td><input id="@("description"+@Model.id)" type="text" value="@Model.Description" /></td>
+<td><input id="@("dayOfCredit"+@Model.id)" type="datetime" value="@Model.DayOfCredit" /></td>
+<td><input id="@("clientId"+@Model.id)" type="number" value="@Model.ClientId" /></td>
+
+<td><input type="button" class="btn btn-success okEditCredit" data-id=@Model.id value="Confirm" /></td>
+<td><input type="button" class="btn btn-danger cancelEditCredit" data-id=@Model.id value="Cancel" /></td>

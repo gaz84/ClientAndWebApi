@@ -1,0 +1,33 @@
+﻿
+@model BankClient.Models.Credit
+  
+
+<div id="addTable" class="table-responsive">
+    
+    <table class="table table-bordered">
+        <tr>
+            <td>@Html.LabelFor(x => x.Ammount)</td>
+            <td>@Html.EditorFor(x => x.Ammount)</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(x => x.Percent)</td>
+            <td>@Html.EditorFor(x => x.Percent)</td>
+            </tr>
+        <tr>
+            <td>@Html.LabelFor(x => x.Description)</td>
+            <td>@Html.EditorFor(x => x.Description)</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(x => x.DayOfCredit)</td>
+            <td>@Html.EditorFor(x => x.DayOfCredit)</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(x => x.ClientId)</td>
+            <td>@Html.EditorFor(x => x.ClientId)</td>
+        </tr>
+        <tr>
+            <td><input type="button" class="btn btn-success okAddCredit" value="Confirm" /></td>
+            <td><input type="button" class="btn btn-danger cancelAddCredit" value="Cancel" /></td>
+        </tr>
+    </table>
+</div>

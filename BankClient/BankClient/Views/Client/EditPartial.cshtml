@@ -1,0 +1,15 @@
+﻿@model BankClient.Models.Client
+
+<td>@Model.id</td>
+<td>
+    @*@Html.EditorFor(x => x.Name, new { @id = "name" + Model.id})*@
+    <input id="@("name"+@Model.id)" type="text" value="@Model.Name" />
+    @Html.ValidationMessageFor(x => x.Name)
+    </td>
+<td>
+    <input id="@("surname"+@Model.id)" type="text" value="@Model.Surname" />
+    @Html.ValidationMessageFor(x => x.Surname)
+    </td>
+<td><input type="button" class="btn btn-success okEditCat" data-id=@Model.id value="Confirm" /></td>
+<td><input type="button" class="btn btn-danger cancelEditCat" data-id=@Model.id value="Cancel" /></td>
+
